@@ -1,6 +1,6 @@
 {
 	"name": "micro-regex-router",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Dead simple routing with regexes. Framework agnostic, but comes with a react/redux example project",
 	"main": "index.js",
 	"files": [
