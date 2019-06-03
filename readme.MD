@@ -22,7 +22,12 @@ npm install micro-regex-router
 
 ## Usage example
 
-Please refer to `example-react` to see a fully functioning react/redux project using this router with the `history` package. The Router component from this project is copied below:
+Please refer to `example-react` to see a fully functioning react/redux project using this router with the `history` package.
+
+Or hit `npm i` and `npm run dev` and look at http://localhost:8080
+
+
+The Router component from this project is copied below:
 
 ```js
 import React from 'react';
