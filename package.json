@@ -1,0 +1,71 @@
+{
+	"name": "micro-regex-router",
+	"version": "1.0.5",
+	"description": "Dead simple routing with regexes. Framework agnostic, but comes with a react/redux example project",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"scripts": {
+		"test": "npm run lint && npm run es-check && jest",
+		"lint": "cross-env NODE_ENV=production eslint index.js",
+		"es-check": "es-check es5 index.js --quiet",
+		"dev": "cross-env NODE_ENV=development webpack-dev-server --progress",
+		"build": "cross-env NODE_ENV=production webpack --progress"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kasvtv/regex-router.git"
+	},
+	"keywords": [
+		"functional",
+		"regex",
+		"router",
+		"react",
+		"redux"
+	],
+	"author": "Kas van 't Veer",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/kasvtv/regex-router/issues"
+	},
+	"homepage": "https://github.com/kasvtv/regex-router#readme",
+	"devDependencies": {
+		"@babel/core": "^7.4.5",
+		"@babel/preset-react": "^7.0.0",
+		"@types/jest": "^24.0.13",
+		"babel-eslint": "^10.0.1",
+		"babel-loader": "^8.0.6",
+		"cross-env": "^5.2.0",
+		"es-check": "^5.0.0",
+		"eslint": "^5.16.0",
+		"eslint-plugin-import": "^2.17.3",
+		"eslint-plugin-jest": "^22.6.4",
+		"eslint-plugin-react": "^7.13.0",
+		"eslint-plugin-react-hooks": "^1.6.0",
+		"history": "^4.9.0",
+		"html-webpack-plugin": "^3.2.0",
+		"jest": "^24.8.0",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"react-redux": "^7.0.3",
+		"redux": "^4.0.1",
+		"redux-thunk": "^2.3.0",
+		"webpack": "^4.32.2",
+		"webpack-cli": "^3.3.2",
+		"webpack-dev-server": "^3.5.1"
+	},
+	"dependencies": {},
+	"quokka": {
+		"babel": true,
+		"env": {
+			"params": {
+				"env": "NODE_PATH=./example-react"
+			}
+		}
+	},
+	"eslintIgnore": [
+		"node_modules",
+		"!.eslintrc.js"
+	]
+}
