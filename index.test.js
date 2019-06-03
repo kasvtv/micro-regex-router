@@ -15,7 +15,7 @@ const routes = [
 		middleware: jest.fn(route => route.intParam % 2 == 1 ? true : { ...route, result: 6 }),
 		result: 5,
 	},
-	{ pattern: '^/duplicated/?$', result: 7 },
+	{ pattern: new RegExp('^/duplicated/?$'), result: 7 }, // already compiled RegExp's should also work
 	{ pattern: '', result: 8 },
 ];
 
