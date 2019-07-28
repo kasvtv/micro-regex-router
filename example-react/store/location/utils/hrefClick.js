@@ -9,7 +9,7 @@ export default function hrefClick(url) {
 			|| e.altKey
 			|| e.ctrlKey
 			|| e.shiftKey
-			|| e.defaultPreed === true
+			|| e.defaultPrevented === true
 		) return;
 
 		e.preventDefault();
